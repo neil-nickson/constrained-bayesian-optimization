@@ -1,0 +1,80 @@
+{
+ "x_star": [
+  2.005292711488794,
+  1.1944528913052415
+ ],
+ "f_star": -2.023988362506663,
+ "c_at_x_star": -8.881784197001252e-16,
+ "x_star_in_domain": true,
+ "c_leq_0": true,
+ "c_strictly_negative": false,
+ "c_at_x_star_scaled": {
+  "1.000000001": 1.0895833568724811e-08,
+  "0.999999999": -1.0895833568724811e-08
+ },
+ "grid_3000x3000_best_feasible_f": -2.0231236372840486,
+ "differential_evolution_best_feasible": {
+  "f": -2.023988362506656,
+  "x": [
+   2.0052927352481387,
+   1.1944528482473935
+  ],
+  "n_seeds": 10
+ },
+ "slsqp_multistart": {
+  "n_starts": 400,
+  "n_converged": 391,
+  "distinct_local_minima": [
+   {
+    "f": -2.024,
+    "x": [
+     2.005,
+     1.194
+    ],
+    "count": 84
+   },
+   {
+    "f": -1.6595,
+    "x": [
+     0.753,
+     -0.324
+    ],
+    "count": 65
+   },
+   {
+    "f": -1.6397,
+    "x": [
+     -0.727,
+     0.211
+    ],
+    "count": 95
+   },
+   {
+    "f": -1.4276,
+    "x": [
+     -1.281,
+     1.633
+    ],
+    "count": 21
+   },
+   {
+    "f": -1.2731,
+    "x": [
+     1.197,
+     -1.753
+    ],
+    "count": 32
+   },
+   {
+    "f": -0.6537,
+    "x": [
+     -2.021,
+     -0.056
+    ],
+    "count": 94
+   }
+  ]
+ },
+ "monte_carlo_min_feasible_f_2e6": -2.0222107089075894,
+ "statement": "numerical estimate supported by grid, DE, multistart and Monte Carlo; NOT a proof of global optimality"
+}

@@ -1,0 +1,5 @@
+tag,n0,n_designs,mean_rejection_attempts,median_attempts,max_attempts,mean_init_feasible,min_init_feasible,max_init_feasible
+alt_I,4,30,435.26666666666665,237.0,1650,0.0,0,0
+main_F,4,30,1.0,1.0,1,2.6666666666666665,1,4
+main_I,4,30,435.26666666666665,237.0,1650,0.0,0,0
+n5_I,5,30,21848.5,18001.0,68666,0.0,0,0

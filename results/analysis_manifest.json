@@ -1,0 +1,16 @@
+{
+ "code_hash": "ae65d2b35eb7a12d",
+ "n_runs": 300,
+ "seeds": 30,
+ "budget": 50,
+ "f_star": -2.023988362506663,
+ "libs": {
+  "python": "3.14.5",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sklearn": "1.8.0"
+ },
+ "run_files_sha256": "e189240a6edcaff9e1925922a304a0d06974ac7e61ba01173072c5097f7f0908",
+ "facts_file": "results/benchmark_facts.json",
+ "facts_sha256": "ee7680dd9bf130c9a7adb242e8beeea0c14dafdcdcaead1871770aba00a8daa3"
+}

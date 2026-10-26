@@ -1,0 +1,56 @@
+{
+ "code_hash": "ae65d2b35eb7a12d",
+ "seeds": 30,
+ "budget": 50,
+ "experiments": {
+  "main_F": [
+   4,
+   "F",
+   [
+    "cEI",
+    "CBOLCB",
+    "ECEI"
+   ]
+  ],
+  "main_I": [
+   4,
+   "I",
+   [
+    "cEI",
+    "CBOLCB",
+    "ECEI"
+   ]
+  ],
+  "alt_I": [
+   4,
+   "I",
+   [
+    "cEI_altfb"
+   ]
+  ],
+  "n5_I": [
+   5,
+   "I",
+   [
+    "cEI",
+    "CBOLCB",
+    "ECEI"
+   ]
+  ]
+ },
+ "bo_settings": {
+  "LS_BOUNDS": [
+   0.1,
+   5.0
+  ],
+  "N_CAND": 1000,
+  "N_REFINE": 2,
+  "LAMBDA_LCB": 1.9233032594817683
+ },
+ "libs": {
+  "python": "3.14.5",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sklearn": "1.8.0"
+ }
+}

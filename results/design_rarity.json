@@ -1,0 +1,51 @@
+{
+ "4": {
+  "n_draws": 100000,
+  "n_zero_feasible": 210,
+  "rate": 0.0021,
+  "wilson_lo": 0.0018347600430236428,
+  "wilson_hi": 0.002403491734486548
+ },
+ "5": {
+  "n_draws": 100000,
+  "n_zero_feasible": 3,
+  "rate": 3e-05,
+  "wilson_lo": 1.0202758544517341e-05,
+  "wilson_hi": 8.82080492517673e-05
+ },
+ "6": {
+  "n_draws": 100000,
+  "n_zero_feasible": 0,
+  "rate": 0.0,
+  "wilson_lo": 0.0,
+  "wilson_hi": 3.841311258303963e-05
+ },
+ "7": {
+  "n_draws": 100000,
+  "n_zero_feasible": 0,
+  "rate": 0.0,
+  "wilson_lo": 0.0,
+  "wilson_hi": 3.841311258303963e-05
+ },
+ "8": {
+  "n_draws": 100000,
+  "n_zero_feasible": 0,
+  "rate": 0.0,
+  "wilson_lo": 0.0,
+  "wilson_hi": 3.841311258303963e-05
+ },
+ "9": {
+  "n_draws": 100000,
+  "n_zero_feasible": 0,
+  "rate": 0.0,
+  "wilson_lo": 0.0,
+  "wilson_hi": 3.841311258303963e-05
+ },
+ "10": {
+  "n_draws": 100000,
+  "n_zero_feasible": 0,
+  "rate": 0.0,
+  "wilson_lo": 0.0,
+  "wilson_hi": 3.841311258303963e-05
+ }
+}

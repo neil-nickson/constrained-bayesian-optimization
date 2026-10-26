@@ -1,0 +1,19 @@
+{
+ "feasible_fraction": 0.648331,
+ "feasible_fraction_se": 0.000337637316094504,
+ "n_mc": 2000000,
+ "n_connected_components_grid": 1,
+ "component_sizes_grid_cells": [
+  1456075.0
+ ],
+ "f_star": -2.023988362506663,
+ "x_star": [
+  2.005292711488794,
+  1.1944528913052415
+ ],
+ "f_at_authors_xstar": -2.0239883049799365,
+ "c_at_authors_xstar": -4.2075818385001185e-08,
+ "unconstrained_grid_min": -3.372219121119865,
+ "c_at_x_star": -8.881784197001252e-16,
+ "note": "numerically estimated constrained optimum (SLSQP multistart; then moved along the ray to the origin until c <= 0 holds in double precision). The point is FEASIBLE (c = 0.0 in double precision) and lies ON the constraint boundary (c is NOT strictly negative there). Cross-checked in audit_optimum.py with differential evolution, a 3000x3000 grid, 400 SLSQP multistarts and Monte Carlo; this is NOT a proof of global optimality"
+}
