@@ -126,11 +126,21 @@ def figures(df, curves):
     for a, tag, ttl in zip(ax, ("main_F", "main_I"), (">=1 feasible initial point", "no feasible initial point")):
         for m in ("cEI", "CBOLCB", "ECEI"):
             C = np.array([curves[(tag, m, s)] for s in range(1, CFG["seeds"] + 1)]); ks = np.arange(C.shape[1])
-            q1, med, q3 = (np.percentile(C, q, axis=0) for q in (25, 50, 75))
+            q1 = np.full(C.shape[1], np.nan)
+            med = np.full(C.shape[1], np.nan)
+            q3 = np.full(C.shape[1], np.nan)
+
+            for j in range(C.shape[1]):
+                values = C[:, j]
+                values = values[np.isfinite(values)]
+                if values.size:
+                    q1[j], med[j], q3[j] = np.percentile(
+                        values, [25, 50, 75]
+                    )
             fin = lambda v: np.where(np.isfinite(v), v, np.nan)
             a.plot(ks, fin(med), color=COL[m], lw=1.8, label=LAB[m]); a.fill_between(ks, fin(q1), fin(q3), color=COL[m], alpha=.12)
         a.set_yscale("log"); a.set_title(ttl, fontsize=9); a.set_xlabel("additional evaluations"); a.grid(alpha=.3, which="both")
-    ax[0].set_ylabel(r"best feasible $f$ $-$ $f^*$: median and IQR"); ax[0].legend(fontsize=7)
+    ax[0].set_ylabel(r"best feasible $f - f^*$: median and IQR"); ax[0].legend(fontsize=7)
     plt.tight_layout(); plt.savefig(f"{FIGS}/fig3_gap_curves.png", dpi=200); plt.close()
 
     fig, ax = plt.subplots(1, 3, figsize=(10, 3.3), sharey=True)
