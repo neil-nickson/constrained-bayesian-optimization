@@ -1,4 +1,4 @@
-# Versions with which the reported results were produced (Python 3.12.3). Other versions are untested.
+# Python version recorded in results/config.json and results/analysis_manifest.json: 3.14.5.
 numpy==2.4.4
 scipy==1.17.1
 scikit-learn==1.8.0
